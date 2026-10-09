@@ -23,7 +23,13 @@
       'analytics_storage': 'denied',
       'wait_for_update': 500
     });
-  </script><!-- Google AdSense Integration --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2257843539555833" crossorigin="anonymous"></script><!-- Google Analytics 4 (GA4) Integration --><script>
+  </script><!-- Google AdSense Integration --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2257843539555833" crossorigin="anonymous"></script><!-- Google Analytics 4 (GA4) Integration --><script async src="https://www.googletagmanager.com/gtag/js?id=G-VSY6PVLC0V"></script><script>(function(){const gaId = "G-VSY6PVLC0V";
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId);
+    })();</script><script>
       // 优先从 localStorage 提取主题，默认使用浅色模式
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches && savedTheme !== 'light')) {
